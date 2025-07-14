@@ -1,45 +1,73 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <title>Hello, World!</title>
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-      body{
-        background-color: rgb(204, 204, 204);
-        
-      }
-      
-      video,audio{
-        background-color: rgb(255, 255, 255);
-        padding: 10px;
-        border-radius: 10px;
-      }
-      
-      h1,h2,h3{
-        text-align: center;
-      }
-    </style>
-  </head>
-  
-  <body>
-      <h1>My Playlist</h1>
-      <h2>Now Playing...</h2>
-      <h2>MP3 songs</h2>
-      
-      <ul>
-        <li><a href="demo" target: "_blank">Song 1</a></li>
-        <li><a href="demo" target: "_blank">Song 2</a></li>
-        <li><a href="demo" target: "_blank">Song 3</a></li>
-        <li><a href="demo" target: "_blank">Song 4</a></li>
-        <li><a href="demo" target: "_blank">Song 5</a></li>
-      </ul>
-      
-      <audio controls>
-        <source type="audio/mpeg" src="https://www.pagalworld.com.se/files/download/id/64630">
-      </audio>
-      
-      <video controls>
-        <source type="video/mp4" src="https://www.w3schools.com/tags/movie.mp4">
-      </video>
-  </body>
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		 body {
+            background-color: rgb(204, 204, 204);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .player_one, .player_two {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            list-style-type: none;
+            margin: 10px 0;
+        }
+        a {
+            text-decoration-line: none;
+            color: #000;
+        }
+	</style>
+</head>
+
+<body>
+	    
+    <h1>My Playlist</h1>
+
+    <h2>Now Playing...</h2>
+
+    <div class="player_one">
+        <video controls>
+            <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <h2>MP3 songs</h2>
+
+    <div class="player_two">
+        <audio controls>
+            <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+
+    <ul>
+        <li><a href="https://www.example.com/song1" target="_blank">Song 1</a></li>
+        <li><a href="https://www.example.com/song2" target="_blank">Song 2</a></li>
+        <li><a href="https://www.example.com/song3" target="_blank">Song 3</a></li>
+        <li><a href="https://www.example.com/song4" target="_blank">Song 4</a></li>
+        <li><a href="https://www.example.com/song5" target="_blank">Song 5</a></li>
+    </ul>
+    <script type="text/javascript" src="./script.js">
+</script>
+
+</body>
+
 </html>
